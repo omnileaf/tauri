@@ -4,13 +4,9 @@
 
 package app.tauri
 
-/**
- * Implemented by the activity to choose whether Tauri handles the back button.
- */
 interface BackButtonHandling {
   /**
-   * When false, Tauri registers no back callback, so the app handles back itself
-   * and Android can play its predictive back-to-home animation.
+   * Set to false to register no back callback, so the app can play Android's predictive back-to-home animation.
    */
   val handleBackButton: Boolean
 }
